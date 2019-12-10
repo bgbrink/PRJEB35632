@@ -8,11 +8,11 @@ The main dependency is the [mHiC](https://github.com/yezhengSTAT/mHiC) pipeline,
 
 - [snakemake](https://snakemake.readthedocs.io/en/stable/index.html)
 - g++ compiler
-- [GEM-library](https://sourceforge.net/projects/gemlibrary/files/gem-library/) (we use it to produce the mappability track required by mHiC ICEing)
+- [GEM-library](https://sourceforge.net/projects/gemlibrary/files/gem-library/) (to produce the mappability track required by mHiC)
 - R with the [GenomicRanges](https://bioconductor.org/packages/release/bioc/html/GenomicRanges.html) package
-- [BEDOPS](https://bedops.readthedocs.io/en/latest/index.html) [wig2bed](https://bedops.readthedocs.io/en/latest/content/reference/file-management/conversion/wig2bed.html)
+- [BEDOPS](https://bedops.readthedocs.io/en/latest/index.html) `wig2bed`
 - [HiC-Pro Utilities](https://github.com/nservant/HiC-Pro/blob/master/doc/UTILS.md) (the `digest_genome.py` script for genome digestion is the only dependency)
-- [HiC sunt draconis (HiCSD)](https://github.com/foerstner-lab/HiCsuntdracones)
+- [HiC sunt draconis (HiCSD)](https://github.com/foerstner-lab/HiCsuntdracones) (>=0.2.0)
 
 
 ## Usage

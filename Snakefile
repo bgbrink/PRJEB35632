@@ -559,6 +559,8 @@ rule convert_to_homer:
     output:
         expand("{output}/{{sample}}_merged/s7_{{resolution}}_{{threshold}}_4C/{{sample}}.interactions.homer",
             output=config["output"])
+    params:
+        hicsd=config["hicsd"]
     shell:
         """
         {params.hicsd} \
