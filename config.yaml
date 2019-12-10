@@ -1,0 +1,60 @@
+## Author: Benedikt G Brink
+## Ludwig-Maximilians-Universitaet Munich
+## 2019
+
+# Location of the genome to which the HiC data should be aligned
+genome: "/path/to/genomes/TriTrypDB-43_TbruceiLister427_2018_Genome_BES2masked_unitigsRemoved.fasta.gz"
+
+# Name for related genome files
+genomeName: "TbruceiLister427_2018"
+
+# Location of the raw data
+raw_data: "/path/to/raw_data"
+
+# Location of GFF files that should be used as view points for the virtual 4C
+gff_folder: "/path/to/GFF_files_4C"
+
+# Output folder for the pipeline
+output: "/path/to/output"
+
+# Location of HiC-Pro (for genome digestion)
+hicPro: "/path/to/HiC-Pro/bin/utils/digest_genome.py"
+
+# Location of the HiC sunt draconis installation
+hicsd: "/path/to/HiCsuntdracones/bin/hicsd"
+
+# Name of the Enzyme that has been used for the HiC reaction
+enzyme: mboi
+
+# Cutsite of the enzyme
+enzyme_cutsite: "GATCGATC"
+
+# List of bin sizes (resolution) that should be used
+resolution: [5000, 10000, 20000, 50000]
+
+# List of posterior probability thresholds, by which the mHiC outcome should be filtered
+probability: [0.6]
+
+# Chromosomes that should be analyzed
+chr_list: "Chr1_3A_Tb427v10 Chr1_3B_Tb427v10 Chr1_5A_Tb427v10 Chr1_5B_Tb427v10
+    Chr1_core_Tb427v10 Chr2_5A_Tb427v10 Chr2_core_Tb427v10 Chr3_3A_Tb427v10
+    Chr3_5A_Tb427v10 Chr3_5B_Tb427v10 Chr3_core_Tb427v10 Chr4_3A_Tb427v10
+    Chr4_3B_Tb427v10 Chr4_5A_Tb427v10 Chr4_5B_Tb427v10 Chr4_core_Tb427v10
+    Chr5_3A_Tb427v10 Chr5_3B_Tb427v10 Chr5_core_Tb427v10 Chr6_3A_Tb427v10
+    Chr6_3B_Tb427v10 Chr6_core_Tb427v10 Chr7_5A_Tb427v10 Chr7_core_Tb427v10
+    Chr8_3A_Tb427v10 Chr8_3B_Tb427v10 Chr8_5A_Tb427v10 Chr8_5B_Tb427v10
+    Chr8_core_Tb427v10 Chr9_3A_Tb427v10 Chr9_3B_Tb427v10 Chr9_5A_Tb427v10
+    Chr9_5B_Tb427v10 Chr9_core_Tb427v10 Chr10_3A_Tb427v10 Chr10_3B_Tb427v10
+    Chr10_5A_Tb427v10 Chr10_5B_Tb427v10 Chr10_core_Tb427v10 Chr11_3A_Tb427v10
+    Chr11_3B_Tb427v10 Chr11_5A_Tb427v10 Chr11_5B_Tb427v10 Chr11_core_Tb427v10
+    BES10_Tb427v10 BES11_Tb427v10 BES12_Tb427v10 BES13_Tb427v10 BES14_Tb427v10
+    BES15_Tb427v10 BES17_Tb427v10 BES1_Tb427v10 BES2_Tb427v10 BES3_Tb427v10
+    BES4_Tb427v10 BES5_Tb427v10 BES7_Tb427v10"
+
+# Datasets that should be analyzed (should correspond to the names of the folders in raw_data)
+sets:
+  - Procyclic
+  - P10
+  - N50
+  - 2T1
+  - 24hrKD
