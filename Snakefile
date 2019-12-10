@@ -343,7 +343,7 @@ rule ice_mappability:
     params:
         resolution=lambda wildcards: wildcards.resolution
     script:
-        "mHiC/bin/bed2mappability.R"
+        "bed2mappability.R"
 
 ## ***************************************
 ## step 4 - Normalization and binning.
@@ -550,7 +550,7 @@ rule normalize_for_ploidy:
         expand("{output}/{{sample}}_merged/s7_{{resolution}}_{{threshold}}_4C/{{sample}}.ploidy_normalized.uniMulti",
             output=config["output"])
     script:
-        "mHiC/bin/normalize_ploidy.R"
+        "normalize_ploidy.R"
 
 rule convert_to_homer:
     input:
@@ -559,8 +559,13 @@ rule convert_to_homer:
     output:
         expand("{output}/{{sample}}_merged/s7_{{resolution}}_{{threshold}}_4C/{{sample}}.interactions.homer",
             output=config["output"])
-    script:
-        "mHiC/bin/mHic2homer.py"
+    shell:
+        """
+        {params.hicsd} \
+         virtual_4C \
+         -m {input} \
+         -o {output}
+        """
 
 rule virtual_4c:
     input:
