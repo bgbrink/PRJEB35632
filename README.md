@@ -1,6 +1,5 @@
-# PRJEB35632
-Further details to follow.
-
+# Antigenic variation by switching inter-chromosomal interactions with an RNA splicing locus in trypanosomes
+This is the HiC analysis pipeline for this preprint https://doi.org/10.1101/2020.01.27.921452. The raw data can be found at ENA under accession number PRJEB35632.
 
 ## Dependencies
 
