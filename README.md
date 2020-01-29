@@ -1,5 +1,7 @@
 # Antigenic variation by switching inter-chromosomal interactions with an RNA splicing locus in trypanosomes
-This is the HiC analysis pipeline for this preprint https://doi.org/10.1101/2020.01.27.921452. The raw data can be found at ENA under accession number PRJEB35632. Processed data and additional information can be found at Zenodo https://doi.org/10.5281/zenodo.3628213.
+Joana Faria, Vanessa Luzak, Laura S. M. Mueller, Benedikt G. Brink, Sebastian Hutchinson, Lucy Glover, David Horn, T. Nicolai Siegel
+bioRxiv 2020.01.27.921452; doi: https://doi.org/10.1101/2020.01.27.921452
+This repo contains the HiC analysis pipeline for this preprint. The raw data can be found at ENA under accession number PRJEB35632. Processed data and additional information can be found at Zenodo https://doi.org/10.5281/zenodo.3628213.
 
 ## Dependencies
 
