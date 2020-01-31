@@ -20,7 +20,9 @@ The main dependency is the [mHiC](https://github.com/yezhengSTAT/mHiC) pipeline,
 
 ## Usage
 
-Please edit the config.yaml to match your data and organism. For further information about snakemake, please refer to the official documentation. This pipeline has been adapted from the mHiC pipeline by the Keles Research Group, University of Wisconsin, so please check out their [Readme](https://github.com/yezhengSTAT/mHiC) for more details about mHiC and the parameters in this pipeline.
+Please edit the config.yaml to match your data and organism. For further information about snakemake, please refer to the official documentation https://snakemake.readthedocs.io/en/stable/index.html. 
+
+This pipeline has been adapted from the mHiC pipeline by the Keles Research Group, University of Wisconsin, so please check out their [Readme](https://github.com/yezhengSTAT/mHiC) for more details about mHiC and the parameters in this pipeline.
 
 ## Acknowledgements
 
