@@ -25,6 +25,6 @@ Please edit the config.yaml to match your data and organism. For further informa
 
 ## Acknowledgements
 
-The mHiC pipeline is developed in Keles Research Group in University of Wisconsin - Madison and please contact Ye Zheng (yezheng@stat.wisc.edu) for any question and suggestion.
+The mHiC pipeline is developed in Keles Research Group in University of Wisconsin - Madison.
 
 Ye Zheng, Ferhat Ay, and Sunduz Keles. Generative modeling of multi-mapping reads with mHi-C advances analysis of Hi-C studies. eLife 2019;8:e38070.
