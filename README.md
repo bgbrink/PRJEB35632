@@ -22,3 +22,9 @@ The main dependency is the [mHiC](https://github.com/yezhengSTAT/mHiC) pipeline,
 ## Usage
 
 Please edit the config.yaml to match your data and organism. For further information about snakemake, please refer to the official documentation. This pipeline has been adapted from the mHiC pipeline by the Keles Research Group, University of Wisconsin, so please check out their [Readme](https://github.com/yezhengSTAT/mHiC) for more details about mHiC and the parameters in this pipeline.
+
+## Acknowledgements
+
+The mHiC pipeline is developed in Keles Research Group in University of Wisconsin - Madison and please contact Ye Zheng (yezheng@stat.wisc.edu) for any question and suggestion.
+
+Ye Zheng, Ferhat Ay, and Sunduz Keles. Generative modeling of multi-mapping reads with mHi-C advances analysis of Hi-C studies. eLife 2019;8:e38070.
